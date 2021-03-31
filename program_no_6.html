@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="lightgray">
+<h2>string function in javascript</h2>
+
+<p>1.charAt()-Click the button to display the first character of the string "HELLO WORLD".</p>
+
+<button onclick="myFunction1()">Try it</button>
+
+<p id="demo1"></p>
+
+<p>2.concat()-Click the button to join two strings into one new string.</p>
+
+<button onclick="myFunction3()">Try it</button>
+
+<p id="demo2"></p>
+
+<p>3.length()-Click the button to return the number of characters in the string "Hello World!".</p>
+
+<button onclick="myFunction2()">Try it</button>
+
+<p id="demo3"></p>
+
+<p>4.replace()-Click the button to replace "world" with "javascript" in the paragraph below:</p>
+
+<p id="demo4">Hello world</p>
+
+<button onclick="myFunction()">Try it</button>
+<h2>Math functions in javascript</h2>
+<p>Math.PI returns the ratio of a circle's circumference to its diameter:</p>
+
+<p id="demo5"></p>
+<h3>JavaScript Math.round()</h3>
+
+<p>Math.round(x) returns the value of x rounded to its nearest integer:</p>
+
+<p id="demo6"></p>
+<h3>JavaScript Math.floor()</h3>
+
+<p>Math.floor(x) returns the value of x rounded <strong>down</strong> to its nearest integer:</p>
+
+<p id="demo7"></p>
+<h3>JavaScript Math.sqrt()</h3>
+
+<p>Math.sqrt(x) returns the square root of x:64</p>
+
+<p id="demo8"></p>
+
+
+
+
+
+
+<script>
+function myFunction1() {
+  var str = "HELLO WORLD";
+  var res = str.charAt(0)
+  document.getElementById("demo1").innerHTML = res;
+}
+</script>
+<script>
+function myFunction3() {
+  var str1 = "Hello ";
+  var str2 = "world!";
+  var res = str1.concat(str2);
+  document.getElementById("demo2").innerHTML = res;
+}
+</script>
+<script>
+function myFunction2() {
+  var str = "Hello World!";
+  var n = str.length;
+  document.getElementById("demo3").innerHTML = n;
+}
+</script>
+<script>
+function myFunction() {
+  var str = document.getElementById("demo4").innerHTML; 
+  var res = str.replace("world", "javascript");
+  document.getElementById("demo4").innerHTML = res;
+}
+</script>
+<script>
+document.getElementById("demo5").innerHTML = Math.PI;
+</script>
+<script>
+document.getElementById("demo6").innerHTML = Math.round(4.4);
+</script>
+<script>
+document.getElementById("demo7").innerHTML = Math.floor(4.7);
+</script>
+<script>
+document.getElementById("demo8").innerHTML = Math.sqrt(64);
+</script>
+
+
+
+</body>
+</html>
