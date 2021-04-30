@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>javascript</title>
+</head>
+<body>
+<center><h2>JAVASCRIPT ARRAY METHODS</h2></center>
+<b><p>1.join()</p></b>
+<p>Click the button to join the array elements into a string.</p>
+
+<button onclick="myFunction()">click</button>
+
+<p id="fun"></p>
+<b><p>2.pop()</p></b>
+<p>Click the button to remove the last element from the array.</p>
+
+<button onclick="myFunction1()">click</button>
+
+<p id="demo1"></p>
+<b><p>3.push()</p></b>
+<p>Click the button to add a new element to the array.</p>
+
+<button onclick="myFunction2()">click</button>
+
+<p id="demo2"></p>
+<b><p>4.shift()</p></b>
+<p>Click the button to remove the first element of the array.</p>
+
+<button onclick="myFunction3()">click</button>
+
+<p id="demo3"></p>
+<b><p>5.Un shift()</p></b>
+<p>Click the button to add elements to the beginning of the array.</p>
+
+<button onclick="myFunction4()">click</button>
+
+<p id="demo4"></p>
+<b><p>6.Length()</p></b>
+<p>Click the button to create an array, then display its length.</p>
+
+<button onclick="myFunction5()">click</button>
+
+<p id="demo5"></p>
+<b><p>7.Delete()</p></b>
+<p>deleting element in a array</p>
+
+<p id="de"></p>
+<p id="dem"></p>
+
+<b><p>8.splice()</p></b>
+
+<p>Click the button to add elements to the array.</p>
+
+<button onclick="myFunction7()">click</button>
+
+<p id="demo7"></p>
+<b><p>9.concat()</p></b>
+<p>Click the button to join two arrays.</p>
+
+<button onclick="myFunction8()">click</button>
+
+<p id="demo8"></p>
+
+<script>
+function myFunction()
+ {
+  var lan = ["javascript", "python", "html", "css","php"];
+  var x = document.getElementById("fun");
+  x.innerHTML = fruits.join();
+}
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction1()
+ {
+  fruits.pop();
+  document.getElementById("demo1").innerHTML = fruits;
+}
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction2() {
+  fruits.push("Kiwi");
+  document.getElementById("demo2").innerHTML = fruits;
+}
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction3()
+ {
+  fruits.shift();
+  document.getElementById("demo3").innerHTML = fruits;
+}
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction4() {
+  fruits.unshift("Lemon", "Pineapple");
+  document.getElementById("demo4").innerHTML = fruits;
+}
+function myFunction5() {
+  var fruits = ["Banana", "Orange", "Apple", "Mango"];
+  document.getElementById("demo5").innerHTML = fruits.length;
+}
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo7").innerHTML = fruits;
+
+function myFunction7() {
+  fruits.splice(2, 0, "Lemon", "Kiwi");
+  document.getElementById("demo7").innerHTML = fruits;
+}
+function myFunction8() 
+{
+  var flower = ["rose", "jasmine"];
+  var  flower1= ["lilly", "hibiscus", "Lotus"];
+  var a = flower.concat(flower1); 
+  document.getElementById("demo8").innerHTML = a;
+}
+
+
+</script>
